@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Comandos</title>
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+            <a href="index.html"> Comandos </a>
+        </div>
+
+        <ul class="menu-desktop">
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="sobre.html"> Sobre </a> </li>
+            <li> <a href="suporte.html"> Suporte </a> </li>
+            <li> <a href="comandos.html"> Comandos </a> </li>
+        </ul>
+
+        <ul class="menu-mobile">
+            <div class="icon-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="sobre.html"> Sobre </a> </li>
+            <li> <a href="suporte.html"> Suporte </a> </li>
+            <li> <a href="comandos.html"> Comandos </a> </li>
+
+        </ul>
+        <div class="menu-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </nav>
+    <section class="banner">
+        <div class="texto">
+           <h1 class="titulo">Comandos</h1>
+
+           <ul>
+            <li class="titulo1">
+                /afk
+            </li>
+            <li class="titulo1">
+                /antilink
+            </li>
+            <li class="titulo1">
+                /ban
+            </li>
+            <li class="titulo1">
+                /carteira
+            </li>
+            <li class="titulo1">
+                /clear
+            </li>
+            <li class="titulo1">
+                /daily
+            </li>
+            <li class="titulo1">
+                /enquete
+            </li>
+            <li class="titulo1">
+                /formulario
+            </li>
+            <li class="titulo1">
+                /hug
+            </li>
+            <li class="titulo1">
+                /kick
+            </li>
+            <li class="titulo1">
+                /kiss
+            </li>
+            <li class="titulo1">
+                /lock
+            </li>
+            <li class="titulo1">
+                /ping
+            </li>
+            <li class="titulo1">
+                /say
+            </li>
+            <li class="titulo1">
+                /serverinfo
+            </li>
+            <li class="titulo1">
+                /setnick
+            </li>
+            <li class="titulo1">
+                /setstatus
+            </li>
+            <li class="titulo1">
+                /slap
+            </li>
+            <li class="titulo1">
+                /slowmode
+            </li>
+            <li class="titulo1">
+                /tempmute
+            </li>
+            <li class="titulo1">
+                /unban
+            </li>
+            <li class="titulo1">
+                /unlock
+            </li>
+            <li class="titulo1">
+                /userinfo
+            </li>
+        </ul>
+
+        </div>
+    </section>
+    <script>
+        var menuIcon = document.querySelector('.menu-icon');
+        var menuMobile = document.querySelector('.menu-mobile');
+        var iconClose = document.querySelector('.menu-mobile .icon-close');
+
+        menuIcon.addEventListener('click',function() {
+            menuMobile.classList.add('ativo')
+        });
+
+        iconClose.addEventListener('click',function() {
+            menuMobile.classList.remove('ativo')
+        });
+
+    </script>
+</body>
+</html>
